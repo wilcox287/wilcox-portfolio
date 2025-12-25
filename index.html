@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,10 +12,18 @@
       color: #333;
     }
     header {
-      background: #0d1117;
+      background: linear-gradient(90deg, #0d1117, #1b1f27);
       color: white;
       padding: 40px 20px;
       text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      text-shadow: 1px 1px 3px #00000066;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
     }
     section {
       padding: 20px;
@@ -25,24 +32,53 @@
       background: white;
       margin-top: 20px;
       border-radius: 10px;
+      border-left: 5px solid #0d1117;
+    }
+    section.project {
+      background: #f0f4ff;
+      box-shadow: 0 3px 6px #00000033;
+      margin-bottom: 15px;
+      padding: 15px 20px;
+      border-left: none;
     }
     h2 {
+      color: #0d1117;
       border-left: 5px solid #0d1117;
       padding-left: 10px;
+    }
+    h3 {
+      color: #0d6efd;
+    }
+    a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a.project-link {
+      color: #0d6efd;
+      font-weight: bold;
+    }
+    a.project-link:hover {
+      color: #0056b3;
+      text-decoration: underline;
     }
     ul {
       line-height: 1.7;
     }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
   </style>
 </head>
-<body>
-
-  <header>
+<body>  <header>
     <h1>Wilcox — Cloud & DevOps Engineer (In Progress)</h1>
     <p>Growing skills. Building projects. Becoming world-class.</p>
-  </header>
-
-  <section>
+  </header>  <section>
     <h2>About Me</h2>
     <p>
       I'm Wilcox, a Cloud and DevOps engineer in training. I am currently building
@@ -50,9 +86,7 @@
       DevOps tools. I am passionate about hands-on learning and creating real
       projects that solve problems.
     </p>
-  </section>
-
-  <section>
+  </section>  <section>
     <h2>Skills</h2>
     <ul>
       <li>Linux (file management, permissions, navigation)</li>
@@ -62,31 +96,25 @@
       <li>CI/CD basics</li>
       <li>VS Code / Mobile development tools</li>
     </ul>
-  </section>
+  </section>  <section>
+    <h2>Projects</h2><section class="project">
+  <h3>1. DevOps Practical Track (Ongoing)</h3>
+  <p>A structured hands-on journey covering Linux, Git, cloud, automation, and CI/CD pipelines. Updated regularly with progress.</p>
+  <!-- Optional image example -->
+  <!-- <img src="https://link-to-your-screenshot.png" alt="DevOps Practical Track"> -->
+</section>
 
-  <section>
-    <h2>Projects</h2>
+<section class="project">
+  <h3>2. Linux Automation Script</h3>
+  <p>A shell script that automates file organization on a Linux system. <a href="#" class="project-link">Repository link</a></p>
+</section>
 
-    <h3>1. DevOps Practical Track (Ongoing)</h3>
-    <p>
-      A structured hands-on journey covering Linux, Git, cloud, automation,
-      and CI/CD pipelines. Updated regularly with progress.
-    </p>
+<section class="project">
+  <h3>3. GitHub Configuration & Workflow Setup</h3>
+  <p>Configured Git, linked repositories, and practiced commits and pushes using GitHub. <a href="#" class="project-link">Repository link</a></p>
+</section>
 
-    <h3>2. Linux Automation Script</h3>
-    <p>
-      A shell script that automates file organization on a Linux system.
-      (Repository link will be added.)
-    </p>
-
-    <h3>3. GitHub Configuration & Workflow Setup</h3>
-    <p>
-      Configured Git, linked repositories, and practiced commits and pushes
-      using GitHub.
-    </p>
-  </section>
-
-  <section>
+  </section>  <section>
     <h2>Learning Roadmap</h2>
     <ul>
       <li>Complete DevOps Practical Track</li>
@@ -95,7 +123,9 @@
       <li>Learn Docker and containerization</li>
       <li>Prepare for AWS & DevOps certifications</li>
     </ul>
-  </section>
-
-</body>
-    </html>
+  </section>  <section>
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:sorochimebube@gmail.com">sorochimebube@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/wilcox287" target="_blank">github.com/wilcox287</a></p>
+  </section></body>
+</html>
